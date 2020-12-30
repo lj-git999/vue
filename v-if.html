@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.min.js"></script>
+</head>
+<body>
+<!--<div id="app">-->
+<!--    <h2 v-if="true">百知教育</h2>-->
+<!--    <h3 v-else>欢迎你</h3>-->
+<!--    <h3 v-else-if="false">加入</h3>-->
+<!--</div>-->
+<!--<script>-->
+<!--    new Vue({-->
+<!--        el:"#app",-->
+<!--        data:{},-->
+<!--    })-->
+<!--</script>-->
+<div id="app">
+    <h3 v-if="true">百知教育</h3>
+    <h3 v-else>欢迎你</h3>
+    <h3 v-else-if="false">加入</h3>
+</div>
+<script>
+    new Vue({
+        el:"#app",
+        data:{},
+    })
+</script>
+</body>
+</html>

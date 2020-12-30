@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.min.js"></script>
+</head>
+<body>
+<!--<div id="app">-->
+<!--    {{msg}}-->
+<!--    <hr>-->
+<!--    <span v-html="msg"></span>-->
+<!--</div>-->
+<!--<script>-->
+<!--    new Vue({-->
+<!--        el:"#app",-->
+<!--        data:{-->
+<!--            msg:"<a href=\"\">百知教育</a>",-->
+<!--        }-->
+<!--    })-->
+<!--</script>-->
+<div id="app">
+    {{msg}}
+    <span v-html="msg"></span>
+</div>
+<script>
+    new Vue({
+        el:'#app',
+        data:{
+            msg:"<a href=\"\">百知教育</a>",
+        }
+    })
+</script>
+</body>
+</html>

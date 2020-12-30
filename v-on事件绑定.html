@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.min.js"></script>
+</head>
+<body>
+<!--<div id="app">-->
+<!--    <h3>年龄:{{age}}</h3>-->
+<!--    <input type="button" value="点我变得更年轻" v-on:click="change_age">-->
+
+<!--</div>-->
+<!--<script>-->
+<!--    new Vue({-->
+<!--        el:"#app",-->
+<!--        data:{-->
+<!--            age:70,-->
+<!--        },-->
+<!--        methods:{-->
+<!--            change_age:function (){-->
+<!--                console.log(this.age);-->
+<!--                this.age&#45;&#45;;-->
+<!--                // this.age=this.age-1;-->
+<!--            }-->
+<!--        }-->
+<!--    })-->
+<!--</script>-->
+<div id="app">
+    <h3>年龄：{{age}}</h3>
+    <input type="button" value="点我变得更年轻" v-on:click="change_age">
+</div>
+<script>
+    new Vue({
+        el:"#app",
+        data:{
+            age:70,
+        },
+        methods:{
+            change_age:function (){
+                console.log(this.age);
+                // this.age=this.age-1;
+                this.age--;
+            }
+        }
+    })
+</script>
+</body>
+</html>
